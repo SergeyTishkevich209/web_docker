@@ -1,5 +1,5 @@
 FROM pndf/my-py:latest
-LABEL author='I'
+LABEL author='Sergey'
 COPY server.py /server/server.py
 COPY wsgi.py /server/wsgi.py
 WORKDIR /server

@@ -1,18 +1,18 @@
 version: "3.8"
 services:
-  serv1:
-    image: pndf/server:latest
+  superserver:
+    image: svtishkevich777/server:latest
     networks:
-      - net7
+      - beltelecom
     ports:
     - target: 8080
       published: 81
-  cl1:
-    image: pndf/client:latest
+  superclient:
+    image: svtishkevich777/client:latest
     networks:
-      - net7
+      - beltelecom
     ports:
     - target: 8080
       published: 82
 networks:
-  net7:
+  beltelecom:
