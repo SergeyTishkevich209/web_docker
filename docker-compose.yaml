@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  serv1:
+    image: pndf/server:latest
+    networks:
+      - net7
+    ports:
+    - target: 8080
+      published: 81
+  cl1:
+    image: pndf/client:latest
+    networks:
+      - net7
+    ports:
+    - target: 8080
+      published: 82
+networks:
+  net7:
